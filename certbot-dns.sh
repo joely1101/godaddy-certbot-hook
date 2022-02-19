@@ -24,6 +24,7 @@ source "${ENV_FILE}"
 
 case "${ACTION}" in
     "certonly")
+        ;;
     "renew")
         ;;
     *)
