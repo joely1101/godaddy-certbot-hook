@@ -24,7 +24,7 @@ source "${ENV_FILE}"
 
 case "${ACTION}" in
     "certonly")
-    "renew"
+    "renew")
         ;;
     *)
 	    echo "Unsupported action: ${ACTION}, certonly or renew are only supported!"
