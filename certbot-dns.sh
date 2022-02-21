@@ -53,4 +53,4 @@ if [ -z "${ACME_SERVER}" ]; then
     exit 1
 fi
 
-certbot "${ACTION}" --agree-tos --manual --preferred-challenge=dns --manual-auth-hook="${HOOK_SCRIPT}" --email "${EMAIL_ADDRESS}" --manual-public-ip-logging-ok -d "${DOMAIN}" --server "${ACME_SERVER}"
+certbot "${ACTION}" --agree-tos --manual --preferred-challenge=dns --manual-auth-hook="${HOOK_SCRIPT}" --email "${EMAIL_ADDRESS}" --manual-public-ip-logging-ok -d "${DOMAIN}" --server "${ACME_SERVER}" --config-dir /cert/c --work-dir /cert/w --logs-dir /cert/log
